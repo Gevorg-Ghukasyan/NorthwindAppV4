@@ -1,0 +1,70 @@
+﻿@{
+    @model BL.Models.VM.CreateProductVM
+   
+}
+
+
+    <form asp-action="Create" asp-controller="Product" method="post" name="Create" id="Create">
+        @Html.AntiForgeryToken()
+        <h3>Add Your Product</h3>
+        <div>
+            <label asp-for="Product.ProductCode">Product Code:</label>
+        <input asp-for="Product.ProductCode" />
+        </div>
+        <div>
+            <label asp-for="Product.ProductName">Product Name:</label>
+        <input asp-for="Product.ProductName" />
+        </div>
+
+        <div>
+        <label asp-for="Product.ProductDescription">ProductDescription:</label>
+        <textarea asp-for="Product.ProductDescription"></textarea>
+       
+        </div>
+
+        <div>
+        <label asp-for="Product.UnitPrice">UnitPrice</label>
+        <input asp-for="Product.UnitPrice" type="number" />
+        </div>
+
+        <div>
+        <label asp-for="Product.StandartUnitCost">StandartUnitCost</label>
+            <input asp-for="Product.StandartUnitCost" type="number" />
+        </div>
+
+        <div>
+        <label asp-for="Product.ReorderLevel">ReorderLevel</label>
+        <input asp-for="Product.ReorderLevel" type="number" />
+        </div>
+
+        <div>
+        <label asp-for="Product.TargetLevel">TargetLevel</label>
+            <input asp-for="Product.TargetLevel" type="number" />
+        </div>
+
+        <div>
+        <label asp-for="Product.QuantityPerUnit">QuantityPerUnit</label>
+        <input asp-for="Product.QuantityPerUnit" type="number" />
+        </div>
+        <div>
+            <label asp-for="Product.MinimumReorderQuantitiy">MinimumReorderQuantitiy</label>
+            <input asp-for="Product.MinimumReorderQuantitiy" type="number" />
+        </div>
+        <div>
+           <div>
+                <label asp-for="Product.ProductCategoriesId">Product Category:</label>
+                <select asp-for="Product.ProductCategoriesId" class="minimal">
+                    @foreach (var category in Model.ProductCategories)
+                    {
+                        <option value="@category.Id">@category.ProductCategoryName</option>
+                    }
+                </select>
+            </div>
+
+        </div>
+
+        <div>
+            <button type="submit">Create Product</button>
+        </div>
+    </form>
+

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "CClK22+JwJpmF8Y7Xn1IF6rlo3/xaE6s/m7gQb7uQOKGi10TMltcsTj8cbN/XbPkTDbMt3VcvIqYA+C6RN6x8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gevorg.ghukasyan\\source\\repos\\NorthwindApp6\\NorthwindApp\\Entities\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\7.0.0\\microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\rpd.eventqueue\\1.1.0\\rpd.eventqueue.1.1.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\gevorg.ghukasyan\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://172.16.79.59:8080/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

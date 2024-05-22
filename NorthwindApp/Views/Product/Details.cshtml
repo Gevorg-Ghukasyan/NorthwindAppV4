@@ -1,0 +1,25 @@
+﻿@{
+    @model BL.Models.VM.ProductDetailsVM
+}
+<html>
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+    <div id="Details">
+        <h4>Product Details</h4>
+        <label>Product Code:</label>
+        <div>@Model.ProductCode</div>
+        <label>Product Name</label>
+        <div>@Model.ProductName</div>
+        <label>Product Description</label>
+        <p> @Model.ProductDescription</p>
+        <label>ProductCategoryImage</label>
+        <img value="@Model.ProductCategoryImage" alt="something went wrong" />
+        <label>UnitPrice</label>
+        <div>@Model.UnitPrice $</div>
+        
+    </div>
+</body>
+</html>
+

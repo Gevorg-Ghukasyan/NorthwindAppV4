@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model BL.Models.VM.EditProductVM
+
+}
+<form asp-action="Update" asp-controller="Product" method="post" name="Update" id="Update">
+    @Html.AntiForgeryToken()
+    <h3>Update Your Product</h3>
+    <input type="hidden" asp-for="@Model.Id" />
+    <div>
+        <label asp-for="@Model.ProductCode">Product Code:</label>
+        <input asp-for="@Model.ProductCode" />
+    </div>
+    <div>
+        <label asp-for="@Model.ProductName">Product Name:</label>
+        <input asp-for="@Model.ProductName" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.ProductDescription">ProductDescription:</label>
+        <textarea asp-for="@Model.ProductDescription"></textarea>
+
+    </div>
+
+    <div>
+        <label asp-for="@Model.UnitPrice">UnitPrice</label>
+        <input asp-for="@Model.UnitPrice" type="number" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.StandartUnitCost">StandartUnitCost</label>
+        <input asp-for="@Model.StandartUnitCost" type="number" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.ReorderLevel">ReorderLevel</label>
+        <input asp-for="@Model.ReorderLevel" type="number" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.TargetLevel">TargetLevel</label>
+        <input asp-for="@Model.TargetLevel" type="number" />
+    </div>
+
+    <div>
+        <label asp-for="@Model.QuantityPerUnit">QuantityPerUnit</label>
+        <input asp-for="@Model.QuantityPerUnit" type="number" />
+    </div>
+    <div>
+        <label asp-for="@Model.MinimumReorderQuantitiy">MinimumReorderQuantitiy</label>
+        <input asp-for="@Model.MinimumReorderQuantitiy" type="number" />
+    </div>
+
+
+    <div>
+        <button type="submit">Update Product</button>
+    </div>
+</form>
